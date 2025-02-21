@@ -130,31 +130,31 @@ function compararPersonagens(personagens) {
             let pontosPersonagem1 = 0;
             let pontosPersonagem2 = 0;
             
-            // Exibindo as informações dos personagens
+            //exibindo as informações dos personagens
             console.log("\nPersonagens batalhando: " + personagem1.descricao() + "       VS \n" + personagem2.descricao())
 
-            // Comparando velocidade
+            //comparando velocidade
             if (personagem1.velocidade > personagem2.velocidade) {
                 pontosPersonagem1++;
             } else if (personagem1.velocidade < personagem2.velocidade) {
                 pontosPersonagem2++;
             }
 
-            // Comparando força
+            //comparando força
             if (personagem1.forca > personagem2.forca) {
                 pontosPersonagem1++;
             } else if (personagem1.forca < personagem2.forca) {
                 pontosPersonagem2++;
             }
 
-            // Comparando resistência
+            //comparando resistência
             if (personagem1.resistencia > personagem2.resistencia) {
                 pontosPersonagem1++;
             } else if (personagem1.resistencia < personagem2.resistencia) {
                 pontosPersonagem2++;
             }
 
-            // Exibindo o resultado da comparação
+            //exibindo o resultado da comparação
             if (pontosPersonagem1 > pontosPersonagem2) {
                 console.log(`${personagem1.codinome} vence ${personagem2.codinome}`);
             } else if (pontosPersonagem1 < pontosPersonagem2) {
@@ -166,5 +166,5 @@ function compararPersonagens(personagens) {
     }
 }
 
-// Chamando a função para comparar todos os personagens
+
 compararPersonagens(personagens);
